@@ -1,0 +1,91 @@
+
+body {
+  background: #fff;
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+.landing-root {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fafafa;
+}
+
+.landing-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.company-logo {
+  max-width: 320px;
+  width: 80vw;
+  height: auto;
+  margin-bottom: 2.5rem;
+  display: block;
+}
+
+.social-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.social-icon-link {
+  text-decoration: none;
+  outline: none;
+}
+
+.social-icon-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #f7f7f7;
+  border: 2px solid #e0e0e0;
+  transition: background 0.2s, border-color 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(50, 60, 63, 0.04);
+}
+
+.social-icon-svg {
+  color: #323C3F;
+  font-size: 2rem;
+  transition: color 0.2s;
+}
+
+.social-icon-link:hover .social-icon-circle,
+.social-icon-link:focus .social-icon-circle {
+  background: #32D488;
+  border-color: #32D488;
+  transform: scale(1.08);
+}
+
+.social-icon-link:hover .social-icon-svg,
+.social-icon-link:focus .social-icon-svg {
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .company-logo {
+    max-width: 220px;
+    margin-bottom: 1.5rem;
+  }
+  .social-row {
+    gap: 1rem;
+  }
+  .social-icon-circle {
+    width: 44px;
+    height: 44px;
+  }
+  .social-icon-svg {
+    font-size: 1.5rem;
+  }
+}
